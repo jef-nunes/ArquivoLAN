@@ -13,6 +13,6 @@ Primeiro protótipo do Server.
   - Novo controller para lidar com requisições do Agent
 
 ## [0.0.3] 12-06-2026
-  Server: Corrigido relacionamento entre Snapshot e DirEntry
-  Primeiro protótipo do Agent.
-  Criado class library de contrato entre Agent e Server
+  - Server: Corrigido relacionamento entre Snapshot e DirEntry
+  - Primeiro protótipo do Agent.
+  - Criado a class library de contrato "Contracts" entre Agent e Server

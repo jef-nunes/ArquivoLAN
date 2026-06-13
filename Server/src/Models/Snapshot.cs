@@ -30,10 +30,11 @@ public class Snapshot
     [ForeignKey(nameof(ComputerId))]
     public Computer Computer { get; set; } = null!;
 
-    // 1 Snapshot → N FileEntries
+    // 1 Snapshot → N FileEntry
     public ICollection<FileEntry> FileEntries { get; set; }
         = new List<FileEntry>();
 
-    // 1 Snapshot → 1 DirEntry
-    public DirEntry DirEntry { get; set; } = null!;
+    // 1 Snapshot → N DirEntry
+    public ICollection<DirEntry> DirEntries { get; set; }
+    = new List<DirEntry>();
 }

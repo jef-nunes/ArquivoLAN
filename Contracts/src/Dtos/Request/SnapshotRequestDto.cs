@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Server.Dtos.Request;
+namespace Contracts.Dtos.Request;
 
 public record SnapshotRequestDto
 {

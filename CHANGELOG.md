@@ -1,9 +1,9 @@
 # Changelog
 
-Todas as mudanças importantes deste projeto serão documentadas aqui.
+Todas as mudanças importantes desta solução serão documentadas aqui.
 
 ## [0.0.1] 11-06-2026
-Primeiro protótipo.
+Primeiro protótipo do Server.
 
 ## [0.0.2] 12-06-2026
   - Refatoração do relacionamento entre entidades do sistema
@@ -11,3 +11,8 @@ Primeiro protótipo.
   - Refatoração de serviços
   - Controllers antigos removidos
   - Novo controller para lidar com requisições do Agent
+
+## [0.0.3] 12-06-2026
+  Server: Corrigido relacionamento entre Snapshot e DirEntry
+  Primeiro protótipo do Agent.
+  Criado class library de contrato entre Agent e Server

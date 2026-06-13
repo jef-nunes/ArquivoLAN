@@ -1,4 +1,4 @@
-using Server.Dtos.Request;
+using Contracts.Dtos.Request;
 using Server.Dtos.Response;
 using Server.Models;
 

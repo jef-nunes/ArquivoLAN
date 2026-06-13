@@ -12,7 +12,7 @@ public record SnapshotResponseDto
 
     public long ComputerId { get; set; }
 
-    public long DirEntryId { get; set; }
+    public List<long> DirEntryIdList { get; set; } = new List<long>();
 
     public List<long> FileEntryIdList = new List<long>();
 }

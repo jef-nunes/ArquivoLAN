@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="Agent/src/Agent.csproj" />
+  <Project Path="Contracts/src/Contracts.csproj" />
   <Project Path="Server/src/Server.csproj" />
 </Solution>

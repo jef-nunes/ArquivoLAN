@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Server.Dtos.Request;
+namespace Contracts.Dtos.Request;
 
 public class GatheringRequestDto
 {
@@ -11,7 +11,8 @@ public class GatheringRequestDto
     public required SnapshotRequestDto Snapshot { get; set; }
 
     [Required]
-    public required DirEntryRequestDto DirEntry { get; set; }
+    public required List<DirEntryRequestDto> DirEntries { get; set; }
+        = new();
 
     [Required]
     public required List<FileEntryRequestDto> FileEntries { get; set; }

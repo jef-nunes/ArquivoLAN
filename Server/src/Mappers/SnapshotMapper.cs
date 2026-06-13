@@ -1,4 +1,4 @@
-using Server.Dtos.Request;
+using Contracts.Dtos.Request;
 using Server.Dtos.Response;
 using Server.Models;
 
@@ -25,7 +25,7 @@ public static class SnapshotMapper
             FinishedAtUtc = entity.FinishedAtUtc,
             TargetPath = entity.TargetPath,
             FileEntryIdList = entity.FileEntries.Select(f => f.Id).ToList(),
-            DirEntryId = entity.DirEntry.Id
+            DirEntryIdList = entity.DirEntries.Select(d => d.Id).ToList()
         };
     }
 }

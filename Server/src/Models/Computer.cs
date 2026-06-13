@@ -14,6 +14,7 @@ public class Computer
 
     [Required]
     [StringLength(255)]
+    [Column("agent_id")]
     public required string AgentId { get; set; }
     
     [StringLength(50)]

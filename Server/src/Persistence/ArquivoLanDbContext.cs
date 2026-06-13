@@ -29,10 +29,10 @@ public class ArquivoLanDbContext : DbContext
             .OnDelete(DeleteBehavior.Cascade);
 
         // Snapshot 1:1 DirEntry
-        modelBuilder.Entity<Snapshot>()
-            .HasOne(s => s.DirEntry)
-            .WithOne(d => d.Snapshot)
-            .HasForeignKey<DirEntry>(d => d.SnapshotId)
+        modelBuilder.Entity<DirEntry>()
+            .HasOne(d => d.Snapshot)
+            .WithMany(s => s.DirEntries)
+            .HasForeignKey(d => d.SnapshotId)
             .OnDelete(DeleteBehavior.Cascade);
     }
     

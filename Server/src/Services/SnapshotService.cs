@@ -41,7 +41,7 @@ public class SnapshotService : ISnapshotService
     {
         return _context.Snapshots
             .Include(s => s.FileEntries)
-            .Include(s => s.DirEntry)
+            .Include(s => s.DirEntries)
             .FirstOrDefault(s => s.Id == id);
     }
 
@@ -52,7 +52,7 @@ public class SnapshotService : ISnapshotService
     {
         return _context.Snapshots
             .Include(s => s.FileEntries)
-            .Include(s => s.DirEntry)
+            .Include(s => s.DirEntries)
             .ToList();
     }
 
@@ -64,7 +64,7 @@ public class SnapshotService : ISnapshotService
         return _context.Snapshots
             .Where(s => s.StartedAtUtc >= from && s.StartedAtUtc <= to)
             .Include(s => s.FileEntries)
-            .Include(s => s.DirEntry)
+            .Include(s => s.DirEntries)
             .ToList();
     }
 
@@ -94,7 +94,7 @@ public class SnapshotService : ISnapshotService
     {
         var entity = _context.Snapshots
             .Include(s => s.FileEntries)
-            .Include(s => s.DirEntry)
+            .Include(s => s.DirEntries)
             .FirstOrDefault(s => s.Id == id);
 
         if (entity == null)

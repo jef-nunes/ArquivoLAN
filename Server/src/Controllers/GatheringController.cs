@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Server.Dtos.Request;
+using Contracts.Dtos.Request;
 using Server.Mappers;
 using Server.Models;
 using Server.Services.Interfaces;
@@ -66,9 +66,12 @@ public class GatheringController : ControllerBase
             SnapshotMapper.ToEntity(
                 requestDto.Snapshot);
 
-        snapshot.DirEntry =
-            DirEntryMapper.ToEntity(
-                requestDto.DirEntry);
+        foreach (var dirEntryDto in requestDto.DirEntries)
+        {
+            snapshot.DirEntries.Add(
+                DirEntryMapper.ToEntity(
+                    dirEntryDto));
+        }
 
         foreach (var fileEntryDto in requestDto.FileEntries)
         {

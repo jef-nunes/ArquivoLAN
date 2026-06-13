@@ -16,3 +16,7 @@ Primeiro protótipo do Server.
   - Server: Corrigido relacionamento entre Snapshot e DirEntry
   - Primeiro protótipo do Agent.
   - Criado a class library de contrato "Contracts" entre Agent e Server
+
+## [0.0.4] 13-06-2026
+  - Agent: Refatoração completa do protótipo inicial
+  - Contracts: Adicionado contrato de conexão ao servidor

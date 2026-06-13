@@ -13,7 +13,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Contracts\src\Contracts.csproj" />
+    <ProjectReference Include="..\Contracts\Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove=".\obj\project.assets.json" />
+    <_ContentIncludedByDefault Remove=".\obj\Server.csproj.nuget.dgspec.json" />
   </ItemGroup>
 
 </Project>

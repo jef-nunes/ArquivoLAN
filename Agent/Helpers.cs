@@ -4,7 +4,7 @@ using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.Security.Cryptography;
 
-namespace DefaultNamespace;
+namespace Agent;
 
 public static class Helpers
 { 

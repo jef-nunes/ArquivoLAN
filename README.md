@@ -10,5 +10,5 @@ ArquivoLAN é um projeto de plataforma para inventário de arquivos em redes cor
 ## Tecnologias
 - .NET 10
 - C#
-- ASP Net Core
+- ASP .NET Core
 - Microsoft SQL Server
